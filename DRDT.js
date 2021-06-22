@@ -39,7 +39,7 @@
  *                                                *
  * @license CC0                                   *
  * @author FloxY-Y /                              *
- * @version 1.0.0                                 *
+ * @version 1.0.1                                 *
 \**                                              **/
 
 (function (ctx) {
@@ -63,13 +63,15 @@
 
         var white = getComputedStyle(DRDT_Sensor).backgroundColor.match(/\d+/g).join("");
         var black = getComputedStyle(DRDT_Sensor).color.match(/\d+/g).join("");
-        var html = getComputedStyle(document.querySelector('html')).filter;
+        var html_filter = getComputedStyle(document.querySelector("html")).filter;
+        var html_text_shadow = getComputedStyle(document.querySelector("html")).textShadow;
 
-        if (white != 255255255 || black != 0 || html != 'none') {
+        if (white != 255255255 || black != 0 || html_filter != "none" || html_text_shadow != "none") {
             return true;
         }
         return false;
     };
 
     ctx.DRDT = DRDT;
+
 })(this.window);
