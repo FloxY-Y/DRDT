@@ -14,6 +14,8 @@ dark reader detection tool is a script to detect people who use an add-ons like 
 - [warning](#warning)
 
 ## Note
+I am a newbie in JS and on GitHub so there is a big chance that there are problems in my script or elements that are not optimized
+
 ### why use those script
 add-ons like darkreader can for some sites create problems (information hidden because of too violent filter) or even do the opposite of what the user wants (example you have a site that is already with a dark theme and dark reader or other puts it in white).  
 the script can also be used if you already have a nice dark theme and you want the user to enjoy it.
