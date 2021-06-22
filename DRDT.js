@@ -22,17 +22,20 @@
  *                                                *
  * How to use :                                   *
  * to use it it is strongly recommended to put    *
- * the code in a setTimeout function              *
+ * the code in a setInterval function             *
  * (approximately 1000ms) ! ! !                   *
  *                                                *
  * example :                                      *
- * SetTimeout(function() {                        *
- *     if (DRDT.detected()) {                     *
- *         // Code if detected                    *
- *     } else {                                   *
- *         // Code if not detected                *
- *     }                                          *
- * })                                             *
+ *                                                *
+ * function GoodFunction() {                      *
+ *   if (DRDT.detected()) {                       *
+ *     // detected                                *
+ *   } else {                                     *
+ *     // not detected                            *
+ *   }                                            *
+ * }                                              *
+ *                                                *
+ * setInterval(GoodFunction, 1000);               *
  *                                                *
  * @license CC0                                   *
  * @author FloxY-Y /                              *
