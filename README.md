@@ -28,7 +28,7 @@ I would like to remind you that all those listed in this section is not legally 
 ## License
 those working are in the public domain [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (C) ^^
 
-**Q:** Do I have to give attribution ?
+**Q:** Do I have to give attribution ?  
 **A:** You're not required to, but it's highly appreciated ! <3
 
 **Q :** can I use the script for commercial purposes ?  
