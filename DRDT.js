@@ -39,7 +39,7 @@
  *                                                *
  * @license CC0                                   *
  * @author FloxY-Y /                              *
- * @version 1.0.1                                 *
+ * @version 1.0.2                                 *
 \**                                              **/
 
 (function (ctx) {
@@ -47,7 +47,7 @@
     var DRDT = {};
 
     var DRDT_Sensor = document.createElement("div");
-    DRDT_Sensor.classList.add("DRDT");
+    DRDT_Sensor.className = "DRDT";
     DRDT_Sensor.style.position = "fixed";
     DRDT_Sensor.style.left = "-5000px";
     DRDT_Sensor.style.zIndex = "-10";
@@ -58,7 +58,7 @@
     document.body.appendChild(style);
     document.body.appendChild(DRDT_Sensor);
 
-    DRDT.detected = function() {
+    DRDT.detected = function () {
         var DRDT_Sensor = document.getElementsByClassName("DRDT")[0];
 
         var white = getComputedStyle(DRDT_Sensor).backgroundColor.match(/\d+/g).join("");
@@ -66,10 +66,7 @@
         var html_filter = getComputedStyle(document.querySelector("html")).filter;
         var html_text_shadow = getComputedStyle(document.querySelector("html")).textShadow;
 
-        if (white != 255255255 || black != 0 || html_filter != "none" || html_text_shadow != "none") {
-            return true;
-        }
-        return false;
+        return (white != 255255255 || black != 0 || html_filter != "none" || html_text_shadow != "none");
     };
 
     ctx.DRDT = DRDT;
